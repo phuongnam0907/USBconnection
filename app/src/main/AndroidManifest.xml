@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="namphuong97.usbconnection">
+
+    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO"/>
+
+    <application
+        android:icon="@android:drawable/ic_menu_compass"
+        android:label="@string/app_name"
+        >
+        <uses-library android:name="com.google.android.things" />
+
+        <activity android:name=".USBconnect">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Launch when USB device attached -->
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_camera" />
+        </activity>
+    </application>
+
+</manifest>

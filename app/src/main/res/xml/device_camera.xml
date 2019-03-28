@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-device vendor-id="0x1908" product-id="0x2311"/>
+</resources>
+
+    <!--phuongnam0907@Nam-Phuong-97-Linux:~/Desktop/platform-tools$ adb shell dmesg-->
+    <!--                    DETAILS OF CAMERA                       -->
+    <!--usb 1-1.5: new high-speed USB device number 6 using dwc_otg-->
+    <!--usb 1-1.5: New USB device found, idVendor=1908, idProduct=2311-->
+    <!--usb 1-1.5: New USB device strings: Mfr=1, Product=2, SerialNumber=0-->
+    <!--usb 1-1.5: Product: USB2.0 PC CAMERA-->
+    <!--usb 1-1.5: Manufacturer: Generic-->
+    <!--uvcvideo: Found UVC 1.00 device USB2.0 PC CAMERA (1908:2311)-->
